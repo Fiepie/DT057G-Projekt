@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding:2%;
+    background-color: #EDECEA;
+    font-family:'Comfortaa', cursive;
+}
+p{ /* Making sure that the font-size adjusts with the scaling*/
+    font-size: clamp(12px,5vw,20px);
+}
+
+/* ul{/* removing bullet list
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}*/
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #F5B8C0;
+    color: black;
+    font-size: 16px;
+    border:none;
+    cursor: pointer;
+    width: 100%;
+    padding-right: 0.5em;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #F5B8C0;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-menu {
+    position: fixed;
+    display: inline-block;
+    top:0;
+    width: 100%;
+    
+    
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EDECEA;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+
+.show {display:block;} 
+
+.logotype-img{
+    margin-top:28px;
+    width: 100%;
+    position: relative;
+}
+
+.news{
+    text-align: center;
+} 
+h3 {
+    text-align: left;
+}
+
+.pattern-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.pattern-image {
+    margin: 0.5em;
+    
+    
+}
+
+button{
+    background-color: #EDECEA;
+    border-radius: 10px;
+    border:none;
+    color: black;
+    padding:1em;
+    transition-duration: 0.4s;
+    
+}
+button:hover{
+    background-color: #F5B8C0;
+}
+.buy-pattern-button {
+    margin-bottom: 2em;
+}
+
+h2{
+    text-align: left;
+}
+
+.about-me-information{
+    padding-bottom: 1em;
+}
+footer{
+    
+    background-color: #B1E0C0;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    width: 95%;
+    bottom: 1em;
+    padding:0.5em;
+    margin: 0 auto;
+    
+}
+
+@media only screen and (max-width:500px) {
+    .tablet-desktop-menu{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width: 800px) {
+    .dropdown-menu{
+        
+        display: none;
+    } 
+    
+    .tablet-desktop-menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color:#EDECEA;
+        color:black
+    }
+    
+    .navbar-links ul{
+        margin:0;
+        padding:0;
+        display: flex;
+    }
+    .navbar-links li {
+        list-style: none;
+    }
+    .navbar-links li a {
+        text-decoration: none;
+        color: black;
+        padding:0.5em;
+        display: block;
+        
+    }
+    .navbar-links li:hover {
+        background-color: #F5B8C0;
+        color:black;
+        transition: 0.4s;
+    }
+    
+    .list-image {
+        height: 5em;
+        width: 5em;
+    }
+    
+    
+    .pattern-container{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+    }
+    
+    
+    .buy-pattern-button{
+        display:grid;
+        grid-template-columns: 30% 30% 30%;
+        text-align: center;
+    }
+    
+    .logotype-img{
+        top:0;
+    }
+    h2 {
+        text-align: center;
+    }
+    
+    .news{
+        text-align: left;
+    }
+    
+    
+    
+    .about-me-information{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        column-gap: 15px;;
+        
+    } 
+}
